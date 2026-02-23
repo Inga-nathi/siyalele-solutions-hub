@@ -17,7 +17,9 @@ const About = () => {
     { label: "Agricultural Research Council Supplier Number", value: "SUPL008169" },
     { label: "Tax Clearance", value: "9279622253" },
     { label: "VAT Number", value: "4410317988" },
-    { label: "Banking", value: "ABSA Business Account" }
+    { label: "Banking", value: "ABSA Business Account" },
+    { label: "Afrimat Vendor Number", value: "SIY-013" },
+    { label: "COIDA Reg Number", value: "990001513880" },
   ];
 
   return (
