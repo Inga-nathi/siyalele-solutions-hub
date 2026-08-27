@@ -11,13 +11,7 @@ const Directors = () => {
       qualifications: ["Business Leadership", "Strategic Planning", "Industry Expertise"],
       icon: Briefcase
     },
-    {
-      name: "Siphesihle Gumede",
-      position: "Director",
-      description: "Experienced professional focused on client relationships and service delivery excellence. Passionate about transformation and empowerment.",
-      qualifications: ["Client Relations", "Service Excellence", "Business Development"],
-      icon: Award
-    }
+ 
   ];
 
   return (
