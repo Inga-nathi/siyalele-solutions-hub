@@ -4,69 +4,11 @@ import { User, Award, Briefcase } from "lucide-react";
 
 const Directors = () => {
   const directors = [
-    {
-      name: "Siyabulela Gumede",
-      position: "Managing Director",
-      description: "Visionary leader driving strategic growth and operational excellence. Committed to innovation and sustainable business development.",
-      qualifications: ["Business Leadership", "Strategic Planning", "Industry Expertise"],
-      icon: Briefcase
-    },
+  
  
   ];
 
-  return (
-    <section id="directors" className="py-20 bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16 animate-fade-in">
-          <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-industrial mb-6 tracking-tight">
-            Leadership Team
-          </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Meet our dynamic directors committed to driving excellence and transformation
-          </p>
-        </div>
-
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
-          {directors.map((director, index) => {
-            const Icon = director.icon;
-            return (
-              <Card key={index} className="group hover:shadow-industrial transition-all duration-300 border-0 bg-gradient-to-br from-white to-muted/20">
-                <CardContent className="p-8">
-                  <div className="text-center mb-6">
-                    {/* Profile Placeholder */}
-                    <div className="w-24 h-24 mx-auto mb-4 bg-gradient-to-br from-primary to-secondary rounded-full flex items-center justify-center group-hover:scale-105 transition-transform duration-300">
-                      <User className="h-12 w-12 text-white" />
-                    </div>
-                    
-                    <h3 className="text-2xl font-bold text-industrial mb-2">{director.name}</h3>
-                    <Badge className="bg-gradient-to-r from-primary to-secondary text-white border-0 mb-4">
-                      {director.position}
-                    </Badge>
-                  </div>
-
-                  <p className="text-muted-foreground leading-relaxed mb-6 text-center">
-                    {director.description}
-                  </p>
-
-                  <div className="space-y-3">
-                    <div className="flex items-center justify-center mb-4">
-                      <Icon className="h-5 w-5 text-primary mr-2" />
-                      <span className="font-semibold text-industrial">Key Expertise</span>
-                    </div>
-                    <div className="flex flex-wrap justify-center gap-2">
-                      {director.qualifications.map((qual, idx) => (
-                        <Badge key={idx} variant="outline" className="bg-primary/5 text-primary border-primary/20">
-                          {qual}
-                        </Badge>
-                      ))}
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-            );
-          })}
-        </div>
-
+ 
         {/* Company Leadership Highlights */}
         <div className="mt-16 bg-gradient-to-r from-primary/10 to-secondary/10 rounded-2xl p-8">
           <div className="text-center">
