@@ -1,22 +1,11 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { MapPin, Phone, Mail, MessageSquare, Clock, Building } from "lucide-react";
-import InteractiveMap from "./InteractiveMap";
+
 
 const Contact = () => {
   const contactInfo = [
-    {
-      icon: MapPin,
-      title: "Our Address",
-      details: ["Monet St Arabella Villas 9", "Benfluer, eMalahleni", "1049, South Africa"],
-      type: "address"
-    },
-    {
-      icon: Phone,
-      title: "Phone Numbers",
-      details: ["+27 73 217 8184", "+27 60 722 6173"],
-      type: "phone"
-    },
+
     {
       icon: Mail,
       title: "Email Address",
@@ -60,7 +49,6 @@ const Contact = () => {
                       </CardTitle>
                     </CardHeader>
                     <CardContent>
-                      {info.details.map((detail, idx) => (
                         <p key={idx} className="text-muted-foreground mb-1">
                           {detail}
                         </p>
@@ -69,11 +57,6 @@ const Contact = () => {
                   </Card>
                 );
               })}
-            </div>
-
-            {/* Interactive Map */}
-            <InteractiveMap />
-          </div>
 
           {/* WhatsApp CTA */}
           <div className="space-y-6">
@@ -112,15 +95,6 @@ const Contact = () => {
                 <CardTitle className="text-lg text-industrial">Quick Contact</CardTitle>
               </CardHeader>
               <CardContent className="space-y-3">
-                <Button 
-                  asChild
-                  variant="outline"
-                  className="w-full justify-start hover:bg-primary/5 hover:border-primary"
-                >
-                  <a href="tel:+27732178184">
-                    <Phone className="mr-3 h-4 w-4" />
-                    Call: +27 73 217 8184
-                  </a>
                 </Button>
                 
                 <Button 
