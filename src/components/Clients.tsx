@@ -1,11 +1,7 @@
 @@ -1,42 +1 @@
 const Clients = () => {
   const clients = [
-    "Eskom",
-    "2Seam Coal", 
-    "Banele Mining",
-    "Thaqin Holdings PTY LTD",
-    "Child Welfare"
+    
   ];
 
   return (
