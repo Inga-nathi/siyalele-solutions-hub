@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { MapPin, Phone, Mail, MessageSquare, Clock, Building } from "lucide-react";
+import { Mail, MessageSquare, Clock, Building } from "lucide-react";
 
 
 const Contact = () => {
